@@ -1,0 +1,42 @@
+{
+    "name": "booni3/spapi-vendor",
+    "description": "Amazon Selling Partner API - Amazon Vendor",
+    "keywords": [
+        "booni3",
+        "spapi-vendor"
+    ],
+    "homepage": "https://github.com/booni3/spapi-vendor",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Adam",
+            "email": "adam@profilestudio.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Booni3\\SpapiVendor\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Booni3\\SpapiVendor\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
